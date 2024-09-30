@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .gridcontainer{
+
+display: grid;
+border: solid;
+grid-template-areas:"item1 item2 item3"
+                      "item1 item4 item3"
+                      "item5 item5 item6";
+
+background-color: black;
+width: 50%;
+height: 50%;
+padding: 10px 25px 15px 10px;
+margin: 50px auto;
+gap: 10px 5px;
+}
+
+
+.item1{
+ grid-area: item1;
+height: 200px;
+ background-color: rgb(241, 82, 82);
+ 
+}
+.item2{
+grid-area: item2;
+background-color: bisque;
+}
+.item3{
+grid-area: item3;
+background-color: rgb(185, 130, 236);
+font-weight: bolder;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.item4{
+grid-area: item4;
+color: rgb(66, 151, 224);
+text-shadow: 0 0 70px red,0 0 70px red, 0 0 70px #00f, 0 0 70px #00f, 0 0 70px #00f,0 0 70px #00f,0 0 70px #00f;
+font-family: cursive;
+font-style: italic;
+}
+.item5{
+grid-area: item5;
+background-color: rgb(186, 250, 91);
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-style: italic;
+font-weight: 600;
+}
+.item6{ 
+grid-area: item6;
+background-color: bisque;
+font-family: fantasy;
+}
+
+.grid-items{
+padding:40px;
+text-align: center;
+font-size: 30px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <div class="grid-items item1"><span><img src="https://th.bing.com/th/id/OIP.jvZSXB5r-K2ddal6iQNBRQHaJL?w=133&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt=""></span> </div>
+        <div class="grid-items item2"><span>12833</span> </div>
+        <div class="grid-items item3"><span>24/A01/070</span> </div>
+        <div class="grid-items item4"><span>Ankush Singh</span> </div>
+        <div class="grid-items item5"><span>Work</span></div>
+         <div class="grid-items item6"><span>Fear + Failures</span></div>
+    </div>
+</body>
+
+</html>
